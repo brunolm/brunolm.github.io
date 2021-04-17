@@ -1,0 +1,151 @@
+<!-- Copyright Coding Wise - made by Bruno Leonardo Michels -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 415 415" width="415" height="415">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none; stroke: #007ACC; stroke-width: 5 }
+		.shp1 { fill: #007ACC; stroke: #007ACC; stroke-width: 2 }
+
+    .glow { filter: url(#glow); }
+    .primary { fill: #007ACC; }
+    .secondary { fill: #fff; }
+    .secondary-stroke { stroke: #007ACC; }
+    .secondary-stroke { stroke: #fff; }
+
+    .light .txt.glow { fill: #007ACC; }
+    .light .txt { fill: #000; }
+	</style>
+  <defs>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2 2" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="glow"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g>
+    <!-- Top -->
+    <path class="shp0" d="M390 80
+      L285 10
+      L100 5
+      L285 60
+      L290 90
+      L330 120
+      L325 145
+      L300 155
+      L280 190
+      L285 210
+      L250 200
+      L235 210
+      L200 220
+      L150 180
+      L135 230
+      L115 200
+      L100 220
+      L80 195
+      L70 210
+      L50 175
+      L40 200
+      L10 160
+      L25 115
+      L105 120
+      L190 95
+      L85 40
+      L125 40
+      L220 60
+      L290 90
+    " />
+
+    <!-- eyebrow -->
+    <path class="shp0" d="M190 95
+      L215 85
+      L250 100
+    " />
+
+    <!-- eye base -->
+    <path class="shp0" d="M105 120
+      L185 130
+      L225 150
+      L300 125
+    " />
+
+    <!-- eye top -->
+    <path class="shp0" d="M185 130
+      L220 115
+      L265 137
+    " />
+
+    <!-- jaw -->
+    <path class="shp0" d="M390 350
+      L355 355
+      L330 380
+      L285 370
+      L255 370
+      L210 330
+      L205 360
+      L180 335
+      L175 370
+      L100 330
+      L30 345
+      L70 265
+      L110 290
+      L120 260
+      L140 280
+      L145 250
+      L195 250
+      L195 230
+      L220 220
+      L220 215
+    " />
+
+    <!-- line 1 -->
+    <path class="shp0" d="M330 120
+      L350 110
+    " />
+
+    <!-- line 2 -->
+    <path class="shp0" d="M385 150
+      L325 145
+    " />
+
+    <!-- line 3 -->
+    <path class="shp0" d="M380 245
+      L285 210
+    " />
+
+    <!-- line 4 -->
+    <path class="shp0" d="M210 270
+      L260 300
+      L340 290
+      L235 210
+    " />
+
+    <!-- line 5 -->
+    <path class="shp0" d="M260 330
+      L286 370
+    " />
+
+    <!-- line 6 -->
+    <path class="shp0" d="M315 335
+      L272 350
+    " />
+  </g>
+
+  <!-- circles -->
+  <g>
+    <circle class="shp1" cx="390" cy="80" r="5" />
+    <circle class="shp1" cx="250" cy="100" r="5" />
+    <circle class="shp1" cx="300" cy="125" r="5" />
+
+    <circle class="shp1" cx="350" cy="110" r="5" />
+    <circle class="shp1" cx="385" cy="150" r="5" />
+    <circle class="shp1" cx="380" cy="245" r="5" />
+
+    <circle class="shp1" cx="210" cy="270" r="5" />
+    <circle class="shp1" cx="260" cy="330" r="5" />
+    <circle class="shp1" cx="315" cy="335" r="5" />
+
+    <circle class="shp1" cx="390" cy="350" r="5" />
+  </g>
+</svg>

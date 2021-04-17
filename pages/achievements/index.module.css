@@ -1,0 +1,25 @@
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.box {
+  width: calc(100% / 3 - 2rem);
+}
+
+.box img {
+  max-width: 100%;
+}
+
+@media (max-width: 960px) {
+  .box {
+    width: calc(100% / 2 - 2rem);
+  }
+}
+
+@media (max-width: 500px) {
+  .box {
+    width: calc(100% / 1 - 2rem);
+  }
+}

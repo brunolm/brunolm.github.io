@@ -1,0 +1,34 @@
+.toolBlocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  grid-gap: 2rem;
+}
+
+.toolBlock {
+  display: flex;
+  flex-direction: column;
+  max-width: calc(100% / 3 - 2rem);
+  margin-bottom: 1em;
+}
+
+.toolBlockIcons {
+  font-size: 24px;
+}
+
+.toolBlockIcons svg:not(:first-child) {
+  margin-left: 0.25em;
+}
+
+@media (max-width: 960px) {
+  .toolBlock {
+    max-width: calc(100% / 2 - 2rem);
+  }
+}
+
+@media (max-width: 500px) {
+  .toolBlock {
+    max-width: calc(100% / 1 - 2rem);
+  }
+}

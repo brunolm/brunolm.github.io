@@ -1,0 +1,86 @@
+.menu svg + span {
+  margin-left: 0.5em;
+}
+
+.sideBar {
+  width: 240px;
+}
+
+.drawerPaper {
+  width: 240px;
+}
+
+.drawerPaper button {
+  padding: 0.5em 1em;
+  width: 100%;
+  text-align: left;
+}
+
+.drawerPaper a {
+  padding: 0;
+}
+
+.drawerPaper button,
+.drawerPaper button a {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .drawer {
+    width: 240px;
+    flex-shrink: 0;
+  }
+}
+
+.drawerMain {
+  display: none;
+}
+
+.content {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  body .appBar {
+    display: none;
+  }
+
+  body .appBar,
+  .content {
+    width: calc(100% - 240px);
+    margin-left: 240px;
+  }
+
+  .drawerMain {
+    display: block;
+  }
+}
+
+
+.profile {
+  text-align: center;
+  padding: 1em 0;
+}
+
+.profile h2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.profile i {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.profile a:not(:first-child) {
+  margin-left: 1em;
+}
