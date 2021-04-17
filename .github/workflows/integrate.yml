@@ -34,7 +34,7 @@ jobs:
           node-version: '12.x'
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./out
-      - run: |
-          git config --global user.email "brunolm@codingwise.com" \
-          git config --global user.name "BrunoLM" \
+      - run: >-
+          git config --global user.email "brunolm@codingwise.com"
+          git config --global user.name "BrunoLM"
           yarn deploy
