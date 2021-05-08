@@ -7,7 +7,7 @@
     "build": "next build",
     "export": "next export",
     "deploy": "yarn build && yarn export && gh-pages -t -b master -d out",
-    "start": "next start"
+    "start": "next start -p 8080"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
