@@ -31,10 +31,10 @@ jobs:
 
       - name: Send to Github
         run: |
-          git branch gh-pages -f
-          git checkout gh-pages
+          git branch master -f
+          git checkout master
           git add ssg -f
           git config --global user.name "BrunoLM"
           git config --global user.email "brunolm7@gmail.com"
           git commit -m ":rocket: New SSG Build"
-          git push -u origin gh-pages -f
+          git push -u origin master -f
