@@ -1,0 +1,3 @@
+.WhatIDo .block {
+  width: calc(100% / 3 - 1rem);
+}

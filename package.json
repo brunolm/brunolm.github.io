@@ -1,0 +1,22 @@
+{
+  "name": "brunolm.github.io",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nullstack": "github:nullstack/nullstack.git#next",
+    "tailwindcss": "^3.0.24"
+  },
+  "scripts": {
+    "start": "npx nullstack start",
+    "build": "npx nullstack build --mode=ssg",
+    "tailwind": "npx tailwindcss -o src/tailwind.css"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1"
+  }
+}
