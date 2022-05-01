@@ -5,13 +5,17 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^7.1.0",
     "nullstack": "github:nullstack/nullstack.git#next",
     "tailwindcss": "^3.0.24"
   },
   "scripts": {
-    "start": "npx nullstack start",
-    "build": "npx nullstack build --mode=ssg",
-    "tailwind": "npx tailwindcss -o src/tailwind.css"
+    "start": "concurrently -n build,server \"npm:dev:*\" \"npm:dev\"",
+    "dev": "npx nullstack start",
+    "dev:tailwind": "npx tailwindcss -o src/tailwind.css -w",
+    "build": "concurrently \"npm:build:*\"",
+    "build:app": "npx nullstack build --mode=ssg",
+    "build:tailwind": "npx tailwindcss -o src/tailwind.css -m"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",

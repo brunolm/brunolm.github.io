@@ -2,9 +2,9 @@ import NullstackLogo from 'nullstack/logo'
 
 export const FavoriteTech = () => {
   return (
-    <div>
-      <h2 class="text-2xl mb-2">Favorite tech</h2>
-      <ul>
+    <div class="my-8">
+      <h2 class="text-2xl mb-4">Favorite tech</h2>
+      <ul class="flex flex-wrap gap-6">
         <li>
           <img
             alt="JavaScript"

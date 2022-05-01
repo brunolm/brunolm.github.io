@@ -18,7 +18,13 @@ export class Tools extends Nullstack<Props> {
         <article>
           <h1 class="text-4xl mb-2">BrunoLM Tools!</h1>
 
-          <a href="/tools/textarea">Textarea</a>
+          <ul class="mb-8">
+            <li class="list-disc ml-8">
+              <a href="/tools/textarea">
+                Textarea: saves what you type on localStorage and allows the browser to do spellcheck stuff
+              </a>
+            </li>
+          </ul>
 
           <div>
             <Textarea route="/tools/textarea" />

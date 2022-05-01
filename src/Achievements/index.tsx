@@ -23,7 +23,7 @@ const achievements = [
     image: <img alt="" src="images/achievements/me-google-bh.jpg" />,
     text: (
       <>
-        <p>
+        <p class="mb-2">
           In 2007 I was in a social network called Orkut (it was bought by Google). It had these "forums" where people
           could talk about something, I was in some forums about programming, C/C++... There were many features people
           wanted in these forums, but Google never developed these features. So I implemented them with an extension.
@@ -148,8 +148,8 @@ export class Achievements extends Nullstack<Props> {
           <section class="flex flex-wrap justify-between gap-4">
             {achievements.map((ach) => (
               <div class="block mb-8">
-                <h3 class="text-lg font-bold">{ach.name}</h3>
-                <div class="mb-2">{ach.image}</div>
+                <h3 class="text-lg font-bold mb-2">{ach.name}</h3>
+                <div class="mb-4">{ach.image}</div>
 
                 <div class="text-sm">{ach.text}</div>
               </div>

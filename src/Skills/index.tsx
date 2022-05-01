@@ -22,7 +22,7 @@ export class Skills extends Nullstack<Props> {
             <ul class="flex flex-wrap">
               {skills.map((skill) => (
                 <li
-                  class={`${skill.badge} w-48 p-2`}
+                  class={`${skill.badge} w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2`}
                   title={skill.badge !== 'none' ? `${skill.badge} badge on Stack Overflow` : null}
                 >
                   <div>{skill.name}</div>

@@ -1,3 +1,21 @@
 .Achievements .block {
-  width: calc(100% / 3 - 1rem);
+  width: calc(100% / 1 - 1rem);
+}
+
+@media screen and (min-width: 900px) {
+  .Achievements .block {
+    width: calc(100% / 2 - 1rem);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .Achievements .block {
+    width: calc(100% / 3 - 1rem);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .Achievements .block {
+    width: calc(100% / 4 - 1rem);
+  }
 }

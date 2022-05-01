@@ -90,8 +90,8 @@ const items: Item[] = [
 
 export const WhatIDo = () => {
   return (
-    <div class="WhatIDo">
-      <h2 class="text-2xl my-8">What I do?</h2>
+    <div class="WhatIDo my-8">
+      <h2 class="text-2xl mb-4">What I do?</h2>
 
       <div class="flex flex-wrap gap-4 justify-between">
         {items.map((item) => (
@@ -106,7 +106,7 @@ export const WhatIDo = () => {
                   return <Icon prefix={icon.prefix as any} name={icon.name as any} size={icon.size} />
                 })}
               </div>
-              <p>{item.text}</p>
+              <p class="mt-2">{item.text}</p>
             </div>
           </div>
         ))}

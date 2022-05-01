@@ -34,16 +34,16 @@ export class Home extends Nullstack<Props> {
             <div class="flex gap-1 mb-4">
               <a href="https://stackoverflow.com/users/340760/brunolm" target="_blank">
                 <img
-                  alt=""
+                  alt="brunolm on stack overflow"
                   src="https://img.shields.io/stackexchange/stackoverflow/r/340760?style=for-the-badge&amp;color=orange&amp;label=Stack+Overflow&amp;logo=stackoverflow&amp;logoColor=fff&amp;cacheSeconds=952000"
                 />
               </a>
-              <img src="https://www.codewars.com/users/brunolm/badges/micro" height="28px" />
+              <img alt="codewars" src="https://www.codewars.com/users/brunolm/badges/micro" height="28px" />
             </div>
 
             <p>
-              Bruno Leonardo Michels is a world class developer with over {expYears} years of experience doing stuff.
-              Bruno's online handle is BrunoLM.
+              <strong>Bruno Leonardo Michels</strong> is a world class developer with over {expYears} years of
+              experience having fun doing stuff.
             </p>
           </div>
 
