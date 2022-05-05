@@ -1,25 +1,22 @@
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
-name: SSG Build to Deploy
+name: Nullstack SSG Build and Deploy
 
 on:
   push:
     branches: [main]
-  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      # cache the dependencies from any node_modules directory
+      - uses: actions/checkout@v3
+
       - name: Cache dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             **/node_modules
-            **/package-lock.json
+            **/yarn.lock
             **/.production
           key: node_modules-${{ hashFiles('**/package.json') }}
 
@@ -29,12 +26,8 @@ jobs:
       - name: Build
         run: yarn build --cache
 
-      - name: Send to Github
-        run: |
-          git branch master -f
-          git checkout master
-          git add ssg -f
-          git config --global user.name "BrunoLM"
-          git config --global user.email "brunolm7@gmail.com"
-          git commit -m ":rocket: New SSG Build"
-          git push origin `git subtree split --prefix ssg master`:master --force
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: master
+          folder: ssg
