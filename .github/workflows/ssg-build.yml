@@ -24,7 +24,11 @@ jobs:
         run: yarn
 
       - name: Build
-        run: yarn build --cache
+        run: |
+          NULLSTACK_PROJECT_NAME="BrunoLM"
+          NULLSTACK_PROJECT_DOMAIN="brunolm.com"
+          NULLSTACK_PROJECT_COLOR="#D22365"
+          yarn build --cache
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
