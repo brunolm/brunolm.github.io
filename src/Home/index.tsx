@@ -11,7 +11,7 @@ interface Props extends NullstackClientContext {
 export class Home extends Nullstack<Props> {
   prepare({ page }: Props) {
     page.title = `BrunoLM - Powered by Nullstack!`
-    page.description = `Bruno Leonardo Michels is a world class developer with over 15 years of experience doing stuff. Bruno's online handle is BrunoLM.`
+    page.description = `Bruno Leonardo Michels is a world class developer with over 15 years of experience doing stuff. Bruno's online handle is BrunoLM, the dev for fun!`
   }
 
   renderLink({ children, href }: { children: Element[]; href: string }) {
