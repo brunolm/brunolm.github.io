@@ -7,6 +7,7 @@ import { Skills } from './Skills'
 import './tailwind.css'
 import { Tools } from './Tools'
 
+declare function Redirects(): typeof Application.prototype.renderHead
 declare function Head(): typeof Application.prototype.renderHead
 declare function Nav(): typeof Application.prototype.renderNav
 
@@ -25,9 +26,37 @@ class Application extends Nullstack {
     this.expanded = false
   }
 
+  renderRedirects({ router }: NullstackClientContext) {
+    return (
+      <>
+        {router.path === '/linkedin' && (
+          <meta http-equiv="refresh" content="0; url=https://www.linkedin.com/in/brunolm/" />
+        )}
+        {router.path === '/blog' && <meta http-equiv="refresh" content="0; url=https://blog.codingwise.com" />}
+        {router.path === '/twitter' && <meta http-equiv="refresh" content="0; url=https://twitter.com/BrunoLM7" />}
+        {router.path === '/stackoverflow' && (
+          <meta http-equiv="refresh" content="0; url=https://stackoverflow.com/users/340760/brunolm" />
+        )}
+        {router.path === '/so' && (
+          <meta http-equiv="refresh" content="0; url=https://stackoverflow.com/users/340760/brunolm" />
+        )}
+        {router.path === '/youtube' && (
+          <meta http-equiv="refresh" content="0; url=https://www.youtube.com/c/BrunoLeonardoMichels" />
+        )}
+        {router.path === '/instagram' && (
+          <meta http-equiv="refresh" content="0; url=https://www.instagram.com/brunolm7" />
+        )}
+        {router.path === '/facebook' && (
+          <meta http-equiv="refresh" content="0; url=https://www.facebook.com/brunolm7" />
+        )}
+      </>
+    )
+  }
+
   renderHead() {
     return (
       <head>
+        <Redirects />
         <meta name="theme-color" value="dark" />
         <link href="https://fonts.gstatic.com" rel="preconnect" />
         <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto&display=swap" rel="stylesheet" />
