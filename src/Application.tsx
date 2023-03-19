@@ -4,8 +4,8 @@ import './Application.css'
 import { Contact } from './Contact'
 import { Home } from './Home'
 import { Skills } from './Skills'
-import './tailwind.css'
 import { Tools } from './Tools'
+import './tailwind.css'
 
 declare function Redirects(): typeof Application.prototype.renderHead
 declare function Head(): typeof Application.prototype.renderHead
@@ -69,7 +69,7 @@ class Application extends Nullstack {
 
     return (
       <>
-        <nav class="top-0 fixed md:relative w-full py-2.5 mb-8 bg-slate-500 border-gray-200 rounded dark:bg-gray-800">
+        <nav class="top-0 fixed md:relative w-full py-2.5 bg-slate-500 border-gray-200 rounded dark:bg-slate-900">
           <div class="container px-4 mx-auto flex flex-wrap justify-between items-center">
             <a href="/">
               <img
@@ -141,10 +141,10 @@ class Application extends Nullstack {
                   <a
                     onclick={this.close}
                     default
-                    href="/tools"
-                    class={router.path === '/tools' ? `text-blue-400 ${menuClass}` : menuClass}
+                    href="/random"
+                    class={router.path === '/random' ? `text-blue-400 ${menuClass}` : menuClass}
                   >
-                    Tools
+                    Random
                   </a>
                 </li>
                 <li>
@@ -176,7 +176,7 @@ class Application extends Nullstack {
           <Home route="/" />
           <Skills route="/skills" />
           <Achievements route="/achievements" />
-          <Tools route="/tools/:slug" />
+          <Tools route="/random/:slug" />
           <Contact route="/contact" />
         </main>
       </>

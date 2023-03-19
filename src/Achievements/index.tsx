@@ -1,4 +1,5 @@
 import Nullstack, { NullstackClientContext } from 'nullstack'
+import { pageMeta } from '../core/page-meta'
 import './index.css'
 
 interface Props extends NullstackClientContext {
@@ -7,13 +8,22 @@ interface Props extends NullstackClientContext {
 
 const achievements = [
   {
+    name: 'Nullstack Core Member',
+    image: <img alt="" src="https://nullstack.app/illustrations/nulla-hero.webp" />,
+    text: (
+      <>
+        <p>I became a core member of Nullstack for making a few contributions with TypeScript.</p>
+      </>
+    ),
+  },
+  {
     name: 'AE Studio Stuff',
     image: <img alt="" src="images/achievements/ae-hackathon-tshirt.jpg" />,
     text: (
       <>
         <p>
-          Assistant to the CEO award, exclusive hackathon T-Shirt, Kimetsu no Yaiba figurines, Alexa, powerbank, and
-          countless other gifts.
+          Assistant to the CEO award, MSI Gaming laptop, exclusive hackathon T-Shirt, Kimetsu no Yaiba figurines, Alexa,
+          powerbank, and countless other gifts.
         </p>
       </>
     ),
@@ -132,7 +142,7 @@ const achievements = [
 export class Achievements extends Nullstack<Props> {
   prepare({ page }: Props) {
     page.title = `BrunoLM Achievements - Powered by Nullstack!`
-    page.description = `Bruno Leonardo Michels is a world class developer with over 15 years of experience doing stuff. BrunoLM achieved many cool things.`
+    page.description = pageMeta.description
   }
 
   render({ project }: Props) {

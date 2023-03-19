@@ -5,6 +5,7 @@ export const skills = [
   { name: 'TypeScript', years: currentYear - 2013, badge: 'bronze' },
   { name: 'C#', years: 9, badge: 'gold' },
 
+  { name: 'Nullstack', years: 1, badge: 'none' },
   { name: 'Node.js', years: 6, badge: 'none' },
   { name: 'React', years: 6, badge: 'none' },
   { name: 'React Native', years: 1, badge: 'none' },
@@ -19,12 +20,13 @@ export const skills = [
   { name: 'SQL Server', years: 9, badge: 'none' },
   { name: 'mySQL', years: 4, badge: 'none' },
   { name: 'Redis', years: 1, badge: 'none' },
-  { name: 'MongoDB', years: 1, badge: 'none' },
+  { name: 'MongoDB', years: 2, badge: 'none' },
 
   { name: 'Docker', years: 5, badge: 'none' },
 
-  { name: 'Bootstrap', years: 5, badge: 'none' },
+  { name: 'Tailwind', years: 2, badge: 'none' },
   { name: 'Material UI', years: 5, badge: 'none' },
+  { name: 'Bootstrap', years: 5, badge: 'none' },
 
   { name: 'Jasmine', years: 3, badge: 'none' },
   { name: 'Karma', years: 3, badge: 'none' },

@@ -1,4 +1,5 @@
 import Nullstack, { NullstackClientContext } from 'nullstack'
+import { pageMeta } from '../core/page-meta'
 import './index.css'
 import { skills } from './skills'
 
@@ -9,14 +10,14 @@ interface Props extends NullstackClientContext {
 export class Skills extends Nullstack<Props> {
   prepare({ page }: Props) {
     page.title = `BrunoLM Skills - Powered by Nullstack!`
-    page.description = `Bruno Leonardo Michels is a world class developer with over 15 years of experience doing stuff. BrunoLM uses JavaScript and things in its ecosystem to get stuff done.`
+    page.description = pageMeta.description
   }
 
   render({ project }: Props) {
     return (
       <section class="Skills">
         <article>
-          <h1 class="text-4xl mb-2">BrunoLM Skills!</h1>
+          <h1 class="text-4xl mb-2">Bruno Leonardo Michels' skills are</h1>
 
           <div>
             <ul class="flex flex-wrap">

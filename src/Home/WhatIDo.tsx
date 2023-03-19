@@ -1,6 +1,6 @@
 import { IconName, IconPrefix } from '@fortawesome/fontawesome-svg-core'
 import { Icon } from '../Shared/Icon'
-import './what-i-do.css'
+import { H2 } from '../core/H2'
 
 interface Item {
   text: Element
@@ -12,9 +12,9 @@ const items: Item[] = [
   {
     text: (
       <>
-        I really enjoy using Nullstack, it allows me to be very productive and not think about many layers and
-        abstractions, I can fully focus on the features and getting shit done. I also enjoy using React or Angular to
-        build stuff.
+        Nullstack is a great tool for me, as it enables me to work efficiently and avoid unnecessary complexity. I can
+        concentrate on the functionality and deliverables of my projects. I also have experience with React and Angular
+        for building applications.
       </>
     ),
     icons: [
@@ -27,8 +27,9 @@ const items: Item[] = [
   {
     text: (
       <>
-        I prefer to use Nullstack, Node.js or C# to build the backend layer. One thing that motivates me a lot is
-        figuring out how to solve complex algorithms or complex problems.
+        Nullstack is my preferred tool for building applications, but I can also adapt to Node.js or C#. I have
+        experience building applications with Next.js, Express, dotnet core. I find it very rewarding to solve complex
+        algorithms or problems and implement them in code.
       </>
     ),
     icons: [
@@ -41,20 +42,30 @@ const items: Item[] = [
   {
     text: (
       <>
-        I use Docker a lot, it makes my life easier in a lot of different scenarios. I can easily spin up containers to
-        handle database and applications for me.
+        Docker is a valuable tool for me, as it simplifies many different scenarios. I can quickly create and manage
+        containers to run database and applications for my projects.
       </>
     ),
     icons: [{ prefix: 'fa-brands', name: 'docker', size: iconSize }],
   },
 
   {
-    text: <>My favorite code editor is VSCode. I've been using it since before it made into version 1.0.</>,
+    text: (
+      <>
+        VSCode is my preferred code editor. I have been using it since its early stages of development (before version
+        1.0).
+      </>
+    ),
     icons: [{ prefix: 'fas', name: 'code', size: iconSize }],
   },
 
   {
-    text: <>Github is my favorite, but I've also worked with GitLab and BitBucket in the past.</>,
+    text: (
+      <>
+        Github is my preferred platform for version control and collaboration, but I also have experience with Azure,
+        GitLab, and BitBucket. .
+      </>
+    ),
     icons: [
       { prefix: 'fa-brands', name: 'github', size: iconSize },
       { prefix: 'fa-brands', name: 'gitlab', size: iconSize },
@@ -73,8 +84,8 @@ const items: Item[] = [
   {
     text: (
       <>
-        I have a lot of experience using Slack and I can easily setup many different types of integrations. My favorite
-        thing is my Genos BOT. I'm also a fan of Discord.
+        I am proficient in using Slack and I can configure various types of integrations. One of my projects is my Genos
+        BOT. I also enjoy using Discord.
       </>
     ),
     icons: [
@@ -83,34 +94,45 @@ const items: Item[] = [
     ],
   },
   {
-    text: <>My favorite Operational System is Windows. I can run any software on it as it supports Docker and WSL.</>,
+    text: (
+      <>
+        Windows is my preferred operating system. It allows me to run any software I need with Docker and WSL support.
+      </>
+    ),
     icons: [{ prefix: 'fa-brands', name: 'windows', size: iconSize }],
   },
 ]
 
 export const WhatIDo = () => {
   return (
-    <div class="WhatIDo my-8">
-      <h2 class="text-2xl mb-4">What I do?</h2>
+    <div class="bg-sky-900 bg-opacity-25 py-16">
+      <section class="max-w-screen-xl mx-auto px-10 xl:px-4 py-10 flex justify-between items-center flex-wrap">
+        <H2 color="text-amber-500">What I do?</H2>
 
-      <div class="flex flex-wrap gap-4 justify-between">
-        {items.map((item) => (
-          <div class="block mb-8">
-            <div>
-              <div class="flex gap-2">
-                {item.icons.map((icon) => {
-                  if ('element' in icon) {
-                    return icon.element
-                  }
+        <p class="pb-8">
+          As a Senior Software Engineer, I develop and blog about various technologies. My expertise lies in JavaScript
+          and C#, as well as frameworks such as Nullstack, React, Node.js, Dotnet Core and Next.js.
+        </p>
 
-                  return <Icon prefix={icon.prefix as any} name={icon.name as any} size={icon.size} />
-                })}
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 justify-between">
+          {items.map((item) => (
+            <div class="mb-8">
+              <div>
+                <div class="flex gap-2">
+                  {item.icons.map((icon) => {
+                    if ('element' in icon) {
+                      return icon.element
+                    }
+
+                    return <Icon prefix={icon.prefix as any} name={icon.name as any} size={icon.size} />
+                  })}
+                </div>
+                <p class="mt-2">{item.text}</p>
               </div>
-              <p class="mt-2">{item.text}</p>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </section>
     </div>
   )
 }
