@@ -18,7 +18,7 @@ export const Hero = () => {
             Bruno Leonardo Michels is a world class developer with over {expYears} years of experience having fun
             solving problems and increasing agency of over 1M people.
           </p>
-          <div>
+          <div class="pt-6">
             <button
               class="bg-emerald-600 text-white border-emerald-600 hover:bg-transparent hover:text-emerald-600 inline-block w-full sm:w-auto px-6 py-4 border"
               href="https://www.linkedin.com/in/brunolm/"
