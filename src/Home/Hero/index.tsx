@@ -57,7 +57,7 @@ export const Hero = () => {
             </p>
             <p class="pb-4">
               I’ve built many custom tailored internal systems and tools to manage entire companies. And I've also
-              worked on websites that were used world-wide by millions of users.
+              worked on websites that were used by millions of users.
             </p>
             <p class="pb-4">
               I love building tools to increase agency, since I started coding I’ve been creating tools to make myself
