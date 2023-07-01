@@ -1,5 +1,6 @@
 import Nullstack, { NullstackClientContext } from 'nullstack'
 import { Icon } from '../Shared/Icon'
+import { H2 } from '../core/H2'
 import { pageMeta } from '../core/page-meta'
 import './index.css'
 
@@ -16,28 +17,24 @@ export class Contact extends Nullstack<Props> {
   render({ project }: NullstackClientContext<Props>) {
     return (
       <>
-        <section class="w-full py-6">
-          <h2 class="text-center text-2xl">Bruno Leonardo Michels contact info</h2>
-          <div class="flex justify-center">
-            <article class="flex items-center">
-              <ul>
-                <li class="flex gap-2 items-center">
-                  <Icon prefix="fas" name="mail-bulk" size={24} /> <span>brunolm7@gmail.com</span>
-                </li>
+        <section class="py-6 flex flex-col items-center justify-center">
+          <H2>Bruno Leonardo Michels contact info</H2>
 
-                <li class="flex gap-2 items-center">
-                  <Icon prefix="fa-brands" name="twitter" size={24} /> <span>Twitter</span>
-                </li>
-
-                <li class="flex gap-2 items-center">
-                  <Icon prefix="fa-brands" name="linkedin" size={24} /> <span>LinkedIn</span>
-                </li>
-              </ul>
-            </article>
-            <aside class="mt-8">
-              <img src="/nulla-chan.webp" alt="Nulla-Chan: Nullstack's official waifu" class="w-48" />
-            </aside>
-          </div>
+          <article class="flex flex-col text-4xl mt-12">
+            <div class="flex gap-8 mb-4">
+              <Icon prefix="fas" name="mail-bulk" size={24} /> <span>brunolm7@gmail.com</span>
+            </div>
+            <div class="mb-4">
+              <a href="https://brunolm.com/twitter" target="_blank" rel="noopener noreferrer" class="flex gap-8">
+                <Icon prefix="fa-brands" name="twitter" size={24} /> <span>Twitter</span>
+              </a>
+            </div>
+            <div class="mb-4">
+              <a href="https://brunolm.com/linkedin" target="_blank" rel="noopener noreferrer" class="flex gap-8">
+                <Icon prefix="fa-brands" name="linkedin" size={24} /> <span>LinkedIn</span>
+              </a>
+            </div>
+          </article>
         </section>
       </>
     )

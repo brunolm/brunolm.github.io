@@ -1,5 +1,6 @@
 import Nullstack, { NullstackClientContext, NullstackNode } from 'nullstack'
 import '../tailwind.css'
+import { AI } from './AI'
 import { Achievements } from './Achievements'
 import { Contact } from './Contact'
 import { Home } from './Home'
@@ -139,6 +140,16 @@ class Application extends Nullstack {
                   <a
                     onclick={this.close}
                     default
+                    href="/ai"
+                    class={router.path === '/ai' ? `text-blue-400 ${menuClass}` : menuClass}
+                  >
+                    AI
+                  </a>
+                </li>
+                <li>
+                  <a
+                    onclick={this.close}
+                    default
                     href="/random"
                     class={router.path === '/random' ? `text-blue-400 ${menuClass}` : menuClass}
                   >
@@ -179,6 +190,7 @@ class Application extends Nullstack {
           <Personality route="/personality" />
           <Achievements route="/achievements" />
           <Tools route="/random/:slug" />
+          <AI route="/ai" />
           <Contact route="/contact" />
         </main>
       </body>

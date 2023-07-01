@@ -1,4 +1,5 @@
 import Nullstack, { NullstackClientContext } from 'nullstack'
+import { H2 } from '../core/H2'
 import { pageMeta } from '../core/page-meta'
 import './index.css'
 
@@ -149,10 +150,9 @@ export class Achievements extends Nullstack<Props> {
     return (
       <section class="Achievements">
         <article>
-          <h1 class="text-4xl mb-2">BrunoLM Achievements!</h1>
-
+          <H2>BrunoLM Achievements!</H2>
           <p class="mt-4 mb-8">
-            Throughout my career I achieved many things, here are some of the tokens I got for achieving them.
+            During my career I achieved many things, here are some of the tokens I got for achieving them.
           </p>
 
           <section class="flex flex-wrap justify-between gap-4">

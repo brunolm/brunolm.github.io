@@ -1,4 +1,5 @@
 import Nullstack, { NullstackClientContext } from 'nullstack'
+import { H2 } from '../core/H2'
 import { pageMeta } from '../core/page-meta'
 import { Textarea } from './Textarea'
 import './index.css'
@@ -17,7 +18,7 @@ export class Tools extends Nullstack<Props> {
     return (
       <section class="Tools">
         <article>
-          <h1 class="text-4xl mb-2">Random stuff!</h1>
+          <H2>Random stuff!</H2>
 
           <ul class="mb-8">
             <li class="list-disc ml-8">

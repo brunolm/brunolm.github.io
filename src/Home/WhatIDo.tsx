@@ -1,10 +1,11 @@
 import { IconName, IconPrefix } from '@fortawesome/fontawesome-svg-core'
+import { NullstackNode } from 'nullstack'
 import { Icon } from '../Shared/Icon'
 import { H2 } from '../core/H2'
 
 interface Item {
-  text: Element
-  icons: Array<{ element: Element } | { prefix: IconPrefix | 'fa-brands'; name: IconName; size: number }>
+  text: NullstackNode
+  icons: Array<{ element: NullstackNode } | { prefix: IconPrefix | 'fa-brands'; name: IconName; size: number }>
 }
 
 const iconSize = 24
