@@ -2,7 +2,7 @@ import Nullstack, { NullstackClientContext } from 'nullstack'
 import { pageMeta } from '../core/page-meta'
 import './index.css'
 
-interface Props extends NullstackClientContext {
+interface Props {
   route: string
 }
 
@@ -140,12 +140,12 @@ const achievements = [
 ]
 
 export class Achievements extends Nullstack<Props> {
-  prepare({ page }: Props) {
+  prepare({ page }: NullstackClientContext<Props>) {
     page.title = `BrunoLM Achievements - Powered by Nullstack!`
     page.description = pageMeta.description
   }
 
-  render({ project }: Props) {
+  render({ project }: NullstackClientContext<Props>) {
     return (
       <section class="Achievements">
         <article>

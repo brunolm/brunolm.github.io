@@ -3,17 +3,17 @@ import { Icon } from '../Shared/Icon'
 import { pageMeta } from '../core/page-meta'
 import './index.css'
 
-interface Props extends NullstackClientContext {
+interface Props {
   route: string
 }
 
 export class Contact extends Nullstack<Props> {
-  prepare({ project, page }: Props) {
+  prepare({ project, page }: NullstackClientContext<Props>) {
     page.title = `BrunoLM Contact - Powered by Nullstack!`
     page.description = pageMeta.description
   }
 
-  render({ project }: Props) {
+  render({ project }: NullstackClientContext<Props>) {
     return (
       <>
         <section class="w-full py-6">

@@ -3,17 +3,17 @@ import { pageMeta } from '../core/page-meta'
 import { Textarea } from './Textarea'
 import './index.css'
 
-interface Props extends NullstackClientContext {
+interface Props {
   route: string
 }
 
 export class Tools extends Nullstack<Props> {
-  prepare({ page }: Props) {
+  prepare({ page }: NullstackClientContext<Props>) {
     page.title = `BrunoLM Tools - Powered by Nullstack!`
     page.description = pageMeta.description
   }
 
-  render({ project }: Props) {
+  render({ project }: NullstackClientContext<Props>) {
     return (
       <section class="Tools">
         <article>

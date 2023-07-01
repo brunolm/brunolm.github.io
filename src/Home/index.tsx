@@ -5,17 +5,17 @@ import { Hero } from './Hero'
 import { WhatIDo } from './WhatIDo'
 import { WhoAmI } from './WhoAmI'
 
-interface Props extends NullstackClientContext {
+interface Props {
   route: string
 }
 
 export class Home extends Nullstack<Props> {
-  prepare({ page }: Props) {
+  prepare({ page }: NullstackClientContext<Props>) {
     page.title = `Bruno Leonardo Michels - BrunoLM - Powered by Nullstack!`
     page.description = pageMeta.description
   }
 
-  render({ project }: Props) {
+  render({ project }: NullstackClientContext<Props>) {
     return (
       <section class="Home">
         <article>
