@@ -3,6 +3,7 @@ import '../tailwind.css'
 import { Achievements } from './Achievements'
 import { Contact } from './Contact'
 import { Home } from './Home'
+import { Personality } from './Personality'
 import { Tools } from './Tools'
 
 declare function Redirects(): NullstackNode
@@ -118,6 +119,16 @@ class Application extends Nullstack {
                   <a
                     onclick={this.close}
                     default
+                    href="/personality"
+                    class={router.path === '/personality' ? `text-blue-400 ${menuClass}` : menuClass}
+                  >
+                    Personality
+                  </a>
+                </li>
+                <li>
+                  <a
+                    onclick={this.close}
+                    default
                     href="/achievements"
                     class={router.path === '/achievements' ? `text-blue-400 ${menuClass}` : menuClass}
                   >
@@ -165,6 +176,7 @@ class Application extends Nullstack {
 
         <main class="container mx-auto px-4 mt-32 md:mt-0">
           <Home route="/" />
+          <Personality route="/personality" />
           <Achievements route="/achievements" />
           <Tools route="/random/:slug" />
           <Contact route="/contact" />
