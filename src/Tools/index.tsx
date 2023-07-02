@@ -32,6 +32,10 @@ export class Tools extends Nullstack<Props> {
             <Textarea route="/random/textarea" />
           </div>
 
+          <hr />
+
+          <img alt="BrunoLM the dev for fun" src="/images/BrunoTheDevForFun.png" class="my-8" />
+
           <div>
             <h2 class="text-2xl">Project ideas</h2>
             <ul class="list-disc ml-8">
