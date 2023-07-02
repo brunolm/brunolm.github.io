@@ -124,9 +124,9 @@ export class Personality extends Nullstack<Props> {
             </svg>
             <blockquote>
               <p class="text-2xl italic font-medium text-gray-900 dark:text-white">
-                You must be shapeless, formless, like water. When you pour water in a cup, it becomes the cup. When you
-                pour water in a bottle, it becomes the bottle. When you pour water in a teapot, it becomes the teapot.
-                Water can drip and it can crash. Become like water my friend.
+                Empty your mind, be formless, shapeless, like water. Now you put water into a cup, it becomes the cup.
+                You put water into a bottle and it becomes the bottle. You put it in a teapot it becomes the teapot. Now
+                water can flow or it can crash. Be water, my friend.
               </p>
             </blockquote>
             <figcaption class="flex items-center justify-center mt-6 space-x-3">
