@@ -5,7 +5,7 @@ self.context = {
     "development": false,
     "production": true,
     "mode": "ssg",
-    "key": "e2694ddf9ce92ec6ee3e56320a64eaae3d5592de",
+    "key": "316eb2074c9816d5cc8949c7476d237be3ea64df",
     "name": ""
   },
   "project": {
@@ -78,8 +78,7 @@ function withAPI(url) {
 async function extractData(response) {
     const html = await response.clone().text();
     const stateLookup = '<meta name="nullstack" content="';
-    const state = html.split("\n").find((line)=>line.indexOf(stateLookup) > -1
-    ).split(stateLookup)[1].slice(0, -2);
+    const state = html.split("\n").find((line)=>line.indexOf(stateLookup) > -1).split(stateLookup)[1].slice(0, -2);
     const { instances , page  } = JSON.parse(decodeURIComponent(state));
     const json = JSON.stringify({
         instances,
@@ -150,8 +149,8 @@ function install(event) {
         "/manifest.webmanifest",
         `/client.js?fingerprint=${self.context.environment.key}`,
         `/client.css?fingerprint=${self.context.environment.key}`,
-        
-        `/nullstack/${self.context.environment.key}/offline/index.html`, 
+        ,
+        `/nullstack/${self.context.environment.key}/offline/index.html`
     ].flat();
     event.waitUntil(async function() {
         const cache = await caches.open(self.context.environment.key);
@@ -170,11 +169,9 @@ self.addEventListener("install", install);
 function activate(event) {
     event.waitUntil(async function() {
         const cacheNames = await caches.keys();
-        const cachesToDelete = cacheNames.filter((cacheName)=>cacheName !== self.context.environment.key
-        );
-        await Promise.all(cachesToDelete.map((cacheName)=>caches.delete(cacheName)
-        ));
-        if (self.registration.navigationPreload) {
+        const cachesToDelete = cacheNames.filter((cacheName)=>cacheName !== self.context.environment.key);
+        await Promise.all(cachesToDelete.map((cacheName)=>caches.delete(cacheName)));
+        if ("navigationPreload" in self.registration) {
             await self.registration.navigationPreload.enable();
         }
         self.clients.claim();
@@ -185,7 +182,6 @@ self.addEventListener("activate", activate);
 
 function staticStrategy(event) {
     event.waitUntil(async function() {
-        var ref;
         if (event.request.method !== "GET") return;
         const url = new URL(event.request.url);
         for (const matcher of self.context.worker.staleWhileRevalidate){
@@ -193,8 +189,8 @@ function staticStrategy(event) {
                 return event.respondWith(staleWhileRevalidate(event));
             }
         }
-        for (const matcher1 of self.context.worker.cacheFirst){
-            if (match(matcher1, url)) {
+        for (const matcher of self.context.worker.cacheFirst){
+            if (match(matcher, url)) {
                 return event.respondWith(cacheFirst(event));
             }
         }
@@ -202,7 +198,7 @@ function staticStrategy(event) {
         if (url.pathname.indexOf("/nullstack/") > -1) {
             return event.respondWith(networkFirst(event));
         }
-        if (((ref = url.searchParams) === null || ref === void 0 ? void 0 : ref.get("fingerprint")) === self.context.environment.key) {
+        if (url.searchParams?.get("fingerprint") === self.context.environment.key) {
             return event.respondWith(cacheFirst(event));
         }
         if (url.pathname.indexOf(".") > -1) {
