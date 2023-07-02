@@ -1,11 +1,11 @@
 import Nullstack, { NullstackClientContext, NullstackNode } from 'nullstack'
 import '../tailwind.css'
-import { AI } from './AI'
 import { Achievements } from './Achievements'
 import { Contact } from './Contact'
 import { Home } from './Home'
 import { Personality } from './Personality'
 import { Tools } from './Tools'
+import { Work } from './Work'
 
 declare function Redirects(): NullstackNode
 declare function Head(): NullstackNode
@@ -71,7 +71,7 @@ class Application extends Nullstack {
 
   renderNav({ router }) {
     const menuClass =
-      'text-2xl font-sora block py-4 md:py-2 pr-4 pl-3 md:p-0 hover:text-white border-b border-gray-700 md:border-0'
+      'text-xl font-sora block py-4 md:py-2 pr-4 pl-3 md:p-0 hover:text-white border-b border-gray-700 md:border-0'
 
     return (
       <>
@@ -105,7 +105,7 @@ class Application extends Nullstack {
               </svg>
             </button>
             <div class={`w-full md:block md:w-auto ${this.expanded ? '' : 'hidden'}`} id="mobile-menu">
-              <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium text-gray-300">
+              <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:font-medium text-gray-300">
                 <li>
                   <a
                     onclick={this.close}
@@ -130,6 +130,16 @@ class Application extends Nullstack {
                   <a
                     onclick={this.close}
                     default
+                    href="/work"
+                    class={router.path === '/work' ? `text-blue-400 ${menuClass}` : menuClass}
+                  >
+                    Work
+                  </a>
+                </li>
+                <li>
+                  <a
+                    onclick={this.close}
+                    default
                     href="/achievements"
                     class={router.path === '/achievements' ? `text-blue-400 ${menuClass}` : menuClass}
                   >
@@ -140,20 +150,10 @@ class Application extends Nullstack {
                   <a
                     onclick={this.close}
                     default
-                    href="/ai"
-                    class={router.path === '/ai' ? `text-blue-400 ${menuClass}` : menuClass}
-                  >
-                    AI
-                  </a>
-                </li>
-                <li>
-                  <a
-                    onclick={this.close}
-                    default
                     href="/random"
                     class={router.path === '/random' ? `text-blue-400 ${menuClass}` : menuClass}
                   >
-                    Random
+                    /r
                   </a>
                 </li>
                 <li>
@@ -188,9 +188,9 @@ class Application extends Nullstack {
         <main class="container mx-auto px-4 mt-32 md:mt-0">
           <Home route="/" />
           <Personality route="/personality" />
+          <Work route="/work" />
           <Achievements route="/achievements" />
           <Tools route="/random/:slug" />
-          <AI route="/ai" />
           <Contact route="/contact" />
         </main>
       </body>

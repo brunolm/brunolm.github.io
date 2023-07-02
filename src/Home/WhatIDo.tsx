@@ -14,8 +14,8 @@ const items: Item[] = [
     text: (
       <>
         Nullstack is a great tool for me, as it enables me to work efficiently and avoid unnecessary complexity. I can
-        concentrate on the functionality and deliverables of my projects. I also have experience with React and Angular
-        for building applications.
+        concentrate on the functionality and deliverables of my projects. I also have plenty experience with React and
+        Angular and can work with them with ease.
       </>
     ),
     icons: [
@@ -28,9 +28,9 @@ const items: Item[] = [
   {
     text: (
       <>
-        Nullstack is my preferred tool for building applications, but I can also adapt to Node.js or C#. I have
+        Nullstack is my preferred tool for building backends as well, but I can also adapt to Node.js or C#. I have
         experience building applications with Next.js, Express, dotnet core. I find it very rewarding to solve complex
-        algorithms or problems and implement them in code.
+        algorithms or problems and implement them in code, I got to kyu 2 in CodeWars by solving challenges.
       </>
     ),
     icons: [
@@ -38,16 +38,6 @@ const items: Item[] = [
       { prefix: 'fa-brands', name: 'node-js', size: iconSize },
       { prefix: 'fa-brands', name: 'microsoft', size: iconSize },
     ],
-  },
-
-  {
-    text: (
-      <>
-        Docker is a valuable tool for me, as it simplifies many different scenarios. I can quickly create and manage
-        containers to run database and applications for my projects.
-      </>
-    ),
-    icons: [{ prefix: 'fa-brands', name: 'docker', size: iconSize }],
   },
 
   {
@@ -64,7 +54,7 @@ const items: Item[] = [
     text: (
       <>
         Github is my preferred platform for version control and collaboration, but I also have experience with Azure,
-        GitLab, and BitBucket. .
+        GitLab, and BitBucket.
       </>
     ),
     icons: [
@@ -85,8 +75,10 @@ const items: Item[] = [
   {
     text: (
       <>
-        I am proficient in using Slack and I can configure various types of integrations. One of my projects is my Genos
-        BOT. I also enjoy using Discord.
+        I am very used to Slack and I can configure various types of integrations and make new plugins. One of my
+        projects is called Genos (a reference to One Punch Man), it's a bot for Slack that I always adapt to my current
+        context. I also have experience with Discord and could work with it as well. I do use Discord for side projects
+        and gaming.
       </>
     ),
     icons: [
@@ -98,9 +90,21 @@ const items: Item[] = [
     text: (
       <>
         Windows is my preferred operating system. It allows me to run any software I need with Docker and WSL support.
+        I've been using Windows for development since I started.
       </>
     ),
     icons: [{ prefix: 'fa-brands', name: 'windows', size: iconSize }],
+  },
+
+  {
+    text: (
+      <>
+        Docker can be very useful, as it simplifies many different scenarios. I can quickly create and manage containers
+        to run database and applications for my projects. But if I have the choice I'll always choose to code directly
+        as it's simpler and faster.
+      </>
+    ),
+    icons: [{ prefix: 'fa-brands', name: 'docker', size: iconSize }],
   },
 ]
 
@@ -112,7 +116,13 @@ export const WhatIDo = () => {
 
         <p class="pb-8">
           As a Senior Software Engineer, I develop and blog about various technologies. My expertise lies in JavaScript
-          and C#, as well as frameworks such as Nullstack, React, Node.js, Dotnet Core and Next.js.
+          and C#, as well as frameworks and libraries such as Nullstack, React, Node.js, Dotnet Core and Next.js.
+        </p>
+
+        <p class="pb-8">
+          I help business grow by building applications that solve their problems. That is not limited to clients, if I
+          work for an agency I'm going to do everything in my power to make the agency itself better. I love working on
+          internal tools, increase agency, create/optimize processes.
         </p>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 justify-between">

@@ -7,9 +7,11 @@ export const FavoriteTech = () => {
       <section class="max-w-screen-xl mx-auto px-10 xl:px-4 py-10 flex justify-between items-center flex-wrap">
         <H2 color="text-cyan-300">Favorite technologies, languages, frameworks</H2>
 
-        <p class="py-4">
-          Bruno Leonardo Michels' favorite tech is: JavaScript, TypeScript, Nullstack, React, Angular, Node.js, C#,
-          Dotnet Core.
+        <p class="py-4 text-xl mb-2">
+          Bruno Leonardo Michels' favorite programming language and technologies are: JavaScript, TypeScript, Nullstack,
+          React, Angular, Node.js, C#, Dotnet Core.
+          <br />
+          Favorite OS: Windows
         </p>
 
         <ul class="flex flex-wrap gap-6">

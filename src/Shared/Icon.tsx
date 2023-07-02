@@ -10,13 +10,13 @@ interface Props {
 export const Icon = ({ prefix, name, size }: Props) => {
   const customIcon = icon({ prefix: prefix as any, iconName: name })
 
-  if (!customIcon?.html) {
+  if (!customIcon?.html || !customIcon?.html?.length) {
     throw new Error(`Could not find icon ${prefix} ${name}`)
   }
 
   return (
     <div
-      html={customIcon.html}
+      html={customIcon.html[0]}
       style={`min-width: ${size * 0.7}px; min-height: ${size * 0.7}px;max-width: ${size}px; max-height: ${size}px;`}
     />
   )
