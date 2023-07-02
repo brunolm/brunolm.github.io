@@ -18,6 +18,40 @@ class Application extends Nullstack {
     page.locale = 'en-US'
   }
 
+  hydrate({ router }: NullstackClientContext) {
+    if (router.path === '/linkedin') {
+      router.url = 'https://www.linkedin.com/in/brunolm/'
+    }
+
+    if (router.path === '/blog') {
+      router.url = 'https://blog.codingwise.com'
+    }
+
+    if (router.path === '/twitter') {
+      router.url = 'https://twitter.com/BrunoLM7'
+    }
+
+    if (router.path === '/stackoverflow' || router.path === '/so') {
+      router.url = 'https://stackoverflow.com/users/340760/brunolm'
+    }
+
+    if (router.path === '/youtube') {
+      router.url = 'https://www.youtube.com/c/BrunoLeonardoMichels'
+    }
+
+    if (router.path === '/instagram') {
+      router.url = 'https://www.instagram.com/brunolm7'
+    }
+
+    if (router.path === '/facebook') {
+      router.url = 'https://www.facebook.com/brunolm7'
+    }
+
+    if (router.path === '/skills') {
+      router.url = '/'
+    }
+  }
+
   toggle() {
     this.expanded = !this.expanded
   }
@@ -26,38 +60,9 @@ class Application extends Nullstack {
     this.expanded = false
   }
 
-  renderRedirects({ router }: NullstackClientContext) {
-    return (
-      <>
-        {router.path === '/linkedin' && (
-          <meta http-equiv="refresh" content="0; url=https://www.linkedin.com/in/brunolm/" />
-        )}
-        {router.path === '/blog' && <meta http-equiv="refresh" content="0; url=https://blog.codingwise.com" />}
-        {router.path === '/twitter' && <meta http-equiv="refresh" content="0; url=https://twitter.com/BrunoLM7" />}
-        {router.path === '/stackoverflow' && (
-          <meta http-equiv="refresh" content="0; url=https://stackoverflow.com/users/340760/brunolm" />
-        )}
-        {router.path === '/so' && (
-          <meta http-equiv="refresh" content="0; url=https://stackoverflow.com/users/340760/brunolm" />
-        )}
-        {router.path === '/youtube' && (
-          <meta http-equiv="refresh" content="0; url=https://www.youtube.com/c/BrunoLeonardoMichels" />
-        )}
-        {router.path === '/instagram' && (
-          <meta http-equiv="refresh" content="0; url=https://www.instagram.com/brunolm7" />
-        )}
-        {router.path === '/facebook' && (
-          <meta http-equiv="refresh" content="0; url=https://www.facebook.com/brunolm7" />
-        )}
-        {router.path === '/skills' && <meta http-equiv="refresh" content="0; url=/" />}
-      </>
-    )
-  }
-
   renderHead() {
     return (
       <head>
-        <Redirects />
         <meta name="theme-color" value="dark" />
         <link href="https://fonts.gstatic.com" rel="preconnect" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
@@ -178,7 +183,7 @@ class Application extends Nullstack {
     )
   }
 
-  render() {
+  render({ router }) {
     return (
       <body class="bg-slate-800 text-white font-roboto">
         <Head />

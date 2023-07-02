@@ -5,6 +5,7 @@ interface Props {
   image: string
   url: string
   quoteSource?: any
+  children: any
 }
 
 export const Quote = (ctx: Partial<NullstackClientContext<Props>>) => {
