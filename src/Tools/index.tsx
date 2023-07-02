@@ -22,14 +22,14 @@ export class Tools extends Nullstack<Props> {
 
           <ul class="mb-8">
             <li class="list-disc ml-8">
-              <a href="/tools/textarea">
+              <a href="/random/textarea">
                 Textarea: saves what you type on localStorage and allows the browser to do spellcheck stuff
               </a>
             </li>
           </ul>
 
           <div>
-            <Textarea route="/tools/textarea" />
+            <Textarea route="/random/textarea" />
           </div>
 
           <div>
