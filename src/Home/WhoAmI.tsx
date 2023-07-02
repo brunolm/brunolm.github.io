@@ -13,23 +13,20 @@ export const WhoAmI = () => {
 
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-14">
             <p>
-              Is a self-taught developer, and I have been developing software for over 15 years. I have worked in
+              Is a self-taught developer, and I have been developing software for over 15 years. I have worked on
               projects of my own that got over 1 million downloads.
             </p>
             <p>
               Believes that autonomous people are at least 10x more productive than people who are not, quite literally.
             </p>
-            <p>
-              When developing software, values autonomy and challenges that allow me to apply my creativity and
-              problem-solving skills.
-            </p>
+            <p>Values autonomy and challenges that allow me to apply my creativity and problem-solving skills.</p>
             <p>Hobbies include watching anime, reading manga, playing games, and developing software.</p>
             <p>
               Has a blog where I write about software development, and I have a YouTube channel where I share some
               content.
             </p>
             <p>Built the internal system for hiring, onboarding, allocations on a couple companies.</p>
-            <p>Automated a lot of processes, reports, saving hundreds of hours of work.</p>
+            <p>Automated a lot of processes, and reports, saving hundreds of hours of work.</p>
             <p>Speaks fluent English and Portuguese.</p>
             <p>Would rather stay at home playing games instead of going out.</p>
             <p>Don't drink alcohol, but I do enjoy a good cup of coffee.</p>
@@ -41,7 +38,7 @@ export const WhoAmI = () => {
             </p>
             <p>Online handle is usually BrunoLM.</p>
             <p>You can reach out via Email, Twitter, or LinkedIn.</p>
-            <p>Uses Dark Mode. If it's not available toggles it with the Dark Reader extension.</p>
+            <p>Uses Dark Mode. If it's not available, toggles it with the Dark Reader extension.</p>
             <p>Uses Microsoft Edge.</p>
             <p>Developed extensions for Chromium and VSCode.</p>
             <p>
@@ -52,11 +49,13 @@ export const WhoAmI = () => {
             <p>Visited Google's office twice. One time in Belo Horizonte and another time in São Paulo.</p>
             <p>Thinks in English talking with his own voice inside his head.</p>
             <p>Speaks fluent English and Portuguese.</p>
-            <p>Worked exclusively in English with native americans for over 5 years.</p>
+            <p>Worked exclusively in English with native Americans for over 5 years.</p>
             <p>Is a Full Stack developer.</p>
             <p>Has no intention to live abroad.</p>
             <p>Works Remotely.</p>
+            <p>Used to play MMOs and lead guilds.</p>
             <p>Member of Stack Overflow since May 13, 2010.</p>
+            <p>Member of GitHub since Apr 3, 2011.</p>
           </div>
         </div>
 

@@ -14,8 +14,8 @@ const items: Item[] = [
     text: (
       <>
         Nullstack is a great tool for me, as it enables me to work efficiently and avoid unnecessary complexity. I can
-        concentrate on the functionality and deliverables of my projects. I also have plenty experience with React and
-        Angular and can work with them with ease.
+        concentrate on the functionality and deliverables of my projects. I also have plenty of experience with React
+        and Angular and can work with them with ease.
       </>
     ),
     icons: [
@@ -29,8 +29,8 @@ const items: Item[] = [
     text: (
       <>
         Nullstack is my preferred tool for building backends as well, but I can also adapt to Node.js or C#. I have
-        experience building applications with Next.js, Express, dotnet core. I find it very rewarding to solve complex
-        algorithms or problems and implement them in code, I got to kyu 2 in CodeWars by solving challenges.
+        experience building applications with Next.js, Express, and dotnet core. I find it very rewarding to solve
+        complex algorithms or problems and implement them in code, I got to kyu 2 in CodeWars by solving challenges.
       </>
     ),
     icons: [
@@ -100,7 +100,7 @@ const items: Item[] = [
     text: (
       <>
         Docker can be very useful, as it simplifies many different scenarios. I can quickly create and manage containers
-        to run database and applications for my projects. But if I have the choice I'll always choose to code directly
+        to run databases and applications for my projects. But if I have the choice I'll always choose to code directly
         as it's simpler and faster.
       </>
     ),
@@ -121,7 +121,7 @@ export const WhatIDo = () => {
 
         <p class="pb-8">
           I help businesses grow by building applications that solve their problems. That is not limited to clients, if
-          I work for an agency I'm going to do everything in my power to make the agency itself better. I love working
+          I work for an agency, I'm going to do everything in my power to make the agency itself better. I love working
           on internal tools, increasing agency, creating/optimizing processes.
         </p>
 
