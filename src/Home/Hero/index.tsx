@@ -60,11 +60,11 @@ export const Hero = () => {
               SQL.
             </p>
             <p class="pb-4">
-              I’ve built many custom tailored internal systems and tools to manage entire companies. And I've also
+              I’ve built many custom-tailored internal systems and tools to manage entire companies. And I've also
               worked on websites that were used by millions of users.
             </p>
             <p class="pb-4">
-              I love building tools to increase agency, since I started coding I’ve been creating tools to make myself
+              I love building tools to increase agency, since I started coding, I’ve been creating tools to make myself
               and the companies I worked for more productive.
             </p>
           </div>

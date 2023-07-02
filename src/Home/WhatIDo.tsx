@@ -120,9 +120,9 @@ export const WhatIDo = () => {
         </p>
 
         <p class="pb-8">
-          I help business grow by building applications that solve their problems. That is not limited to clients, if I
-          work for an agency I'm going to do everything in my power to make the agency itself better. I love working on
-          internal tools, increase agency, create/optimize processes.
+          I help businesses grow by building applications that solve their problems. That is not limited to clients, if
+          I work for an agency I'm going to do everything in my power to make the agency itself better. I love working
+          on internal tools, increasing agency, creating/optimizing processes.
         </p>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 justify-between">
