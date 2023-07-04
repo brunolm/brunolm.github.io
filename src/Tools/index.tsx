@@ -10,7 +10,7 @@ interface Props {
 
 export class Tools extends Nullstack<Props> {
   prepare({ page }: NullstackClientContext<Props>) {
-    page.title = `BrunoLM Tools - Powered by Nullstack!`
+    page.title = `Random things and tools ${pageMeta.titleSuffix}`
     page.description = pageMeta.description
   }
 

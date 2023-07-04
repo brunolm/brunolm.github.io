@@ -9,8 +9,8 @@ interface Props {
 
 export class Personality extends Nullstack<Props> {
   prepare({ project, page }: NullstackClientContext<Props>) {
-    page.title = `BrunoLM Personality - Powered by Nullstack!`
-    page.description = pageMeta.description
+    page.title = `Personality ${pageMeta.titleSuffix}`
+    page.description = `Information about Bruno Leonardo Michels (BrunoLM) personality. MBTI, DISC, Enneagram, and more.`
   }
 
   render({ project }: NullstackClientContext<Props>) {

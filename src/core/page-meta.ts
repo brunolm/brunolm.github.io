@@ -1,4 +1,4 @@
 export const pageMeta = {
-  titleSuffix: `- BrunoLM - Powered by Nullstack!`,
-  description: `Bruno Leonardo Michels is a world class developer with over 16 years of experience coding. Bruno's online handle is BrunoLM, the dev for fun! Self-taught, autonomous!`,
+  titleSuffix: `- Bruno Leonardo Michels (BrunoLM)`,
+  description: `Bruno Leonardo Michels is a developer with over 16 years of experience. Bruno's online handle is BrunoLM, the dev for fun! Self-taught, autonomous!`,
 }

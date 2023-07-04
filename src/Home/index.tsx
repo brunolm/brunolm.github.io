@@ -11,8 +11,10 @@ interface Props {
 
 export class Home extends Nullstack<Props> {
   prepare({ page }: NullstackClientContext<Props>) {
-    page.title = `Bruno Leonardo Michels - BrunoLM - Powered by Nullstack!`
-    page.description = pageMeta.description
+    page.title = `About ${pageMeta.titleSuffix}`
+    page.description = `Bruno Leonardo Michels is a developer with over ${
+      new Date().getFullYear() - 2007
+    } years of experience. Bruno's online handle is BrunoLM, the dev for fun! Self-taught, autonomous!`
   }
 
   render({ project }: NullstackClientContext<Props>) {
@@ -20,11 +22,8 @@ export class Home extends Nullstack<Props> {
       <section class="Home">
         <article>
           <Hero />
-
           <FavoriteTech />
-
           <WhatIDo />
-
           <WhoAmI />
         </article>
       </section>

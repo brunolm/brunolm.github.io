@@ -18,8 +18,8 @@ const randomGravatar = () => {
 
 export class Work extends Nullstack<Props> {
   prepare({ project, page }: NullstackClientContext<Props>) {
-    page.title = `BrunoLM Information - Powered by Nullstack!`
-    page.description = pageMeta.description
+    page.title = `Bruno's work, and recommendations ${pageMeta.titleSuffix}`
+    page.description = `Recommendations and work done by Bruno Leonardo Michels (BrunoLM).`
   }
 
   render({ project }: NullstackClientContext<Props>) {
@@ -85,6 +85,40 @@ export class Work extends Nullstack<Props> {
 
               <P>
                 Really glad to had the experience to work with him and thankful for the opportunities he also gave me!
+              </P>
+            </Quote>
+
+            <Quote
+              name="Peewee Silva"
+              url="https://www.linkedin.com/in/peeweesilva/"
+              image="https://media.licdn.com/dms/image/C4E03AQFRnuMMm7ERtg/profile-displayphoto-shrink_400_400/0/1517733976575?e=1694044800&v=beta&t=qmpdOaq0eadHlT0pmYu2jZlQXq7OyFf69KUF-op1Nsw"
+            >
+              <P>
+                Bruno is an amazing developer and the best problem-solving. He consistently demonstrates a deep
+                understanding of complex coding languages, frameworks, and software development principles.
+              </P>
+              <P>
+                One of the qualities that truly sets Bruno apart is his unwavering dedication to his work. His
+                commitment to excellence is evident in the quality of his code and the solutions he provides. Bruno is
+                always willing to go the extra mile to ensure that projects are completed successfully, and his ability
+                to work under pressure while maintaining a positive attitude is truly admirable.
+              </P>
+              <P>
+                He is the best developer to talk about technology and code. I learned a lot from him. He helped me how
+                to be more efficient and focused.
+              </P>
+            </Quote>
+
+            <Quote
+              name="Guilherme Pacheco"
+              url="https://www.linkedin.com/in/gfpacheco/"
+              image="https://media.licdn.com/dms/image/C4D03AQF2b4c0kBT4YQ/profile-displayphoto-shrink_100_100/0/1588107971946?e=1694044800&v=beta&t=Y0Bqj8P3Z0CkF4hiUK6oaU5WpBLYM7FHOYXMWw3wE8U"
+            >
+              <P>
+                I highly recommend Bruno as a developer and an expert in the JavaScript ecosystem. Having worked with
+                him for the past few years, I have witnessed firsthand his exceptional skills and dedication.
+                Furthermore, Bruno consistently demonstrates professionalism and a strong work ethic, which makes him an
+                invaluable asset to any team.
               </P>
             </Quote>
 

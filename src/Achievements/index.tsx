@@ -142,8 +142,8 @@ const achievements = [
 
 export class Achievements extends Nullstack<Props> {
   prepare({ page }: NullstackClientContext<Props>) {
-    page.title = `BrunoLM Achievements - Powered by Nullstack!`
-    page.description = pageMeta.description
+    page.title = `Achievements - ${pageMeta.titleSuffix}`
+    page.description = `During Bruno's career he achieved many things, here are some of the tokens he got for achieving them.`
   }
 
   render({ project }: NullstackClientContext<Props>) {

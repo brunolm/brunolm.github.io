@@ -10,7 +10,7 @@ interface Props {
 
 export class Contact extends Nullstack<Props> {
   prepare({ project, page }: NullstackClientContext<Props>) {
-    page.title = `BrunoLM Contact - Powered by Nullstack!`
+    page.title = `Contact Information ${pageMeta.titleSuffix}`
     page.description = pageMeta.description
   }
 
@@ -18,10 +18,10 @@ export class Contact extends Nullstack<Props> {
     return (
       <>
         <section class="py-6 flex flex-col items-center justify-center">
-          <H2>Bruno Leonardo Michels contact info</H2>
+          <H2>Bruno Leonardo Michels contact information</H2>
 
           <article class="flex flex-col text-4xl mt-12">
-            <div class="flex gap-8 mb-4">
+            <div class="flex gap-8 mb-4" title="email: brunolm7@gmail.com">
               <Icon prefix="fas" name="mail-bulk" size={24} /> <span>brunolm7@gmail.com</span>
             </div>
             <div class="mb-4">
