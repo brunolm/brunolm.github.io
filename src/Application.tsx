@@ -19,36 +19,20 @@ class Application extends Nullstack {
   }
 
   hydrate({ router }: NullstackClientContext) {
-    if (router.path === '/linkedin') {
-      router.url = 'https://www.linkedin.com/in/brunolm/'
+    const pathToUrlMap = {
+      '/linkedin': 'https://www.linkedin.com/in/brunolm/',
+      '/blog': 'https://blog.codingwise.com',
+      '/twitter': 'https://twitter.com/BrunoLM7',
+      '/stackoverflow': 'https://stackoverflow.com/users/340760/brunolm',
+      '/so': 'https://stackoverflow.com/users/340760/brunolm',
+      '/youtube': 'https://www.youtube.com/c/BrunoLeonardoMichels',
+      '/instagram': 'https://www.instagram.com/brunolm7',
+      '/facebook': 'https://www.facebook.com/brunolm7',
+      '/skills': '/',
     }
 
-    if (router.path === '/blog') {
-      router.url = 'https://blog.codingwise.com'
-    }
-
-    if (router.path === '/twitter') {
-      router.url = 'https://twitter.com/BrunoLM7'
-    }
-
-    if (router.path === '/stackoverflow' || router.path === '/so') {
-      router.url = 'https://stackoverflow.com/users/340760/brunolm'
-    }
-
-    if (router.path === '/youtube') {
-      router.url = 'https://www.youtube.com/c/BrunoLeonardoMichels'
-    }
-
-    if (router.path === '/instagram') {
-      router.url = 'https://www.instagram.com/brunolm7'
-    }
-
-    if (router.path === '/facebook') {
-      router.url = 'https://www.facebook.com/brunolm7'
-    }
-
-    if (router.path === '/skills') {
-      router.url = '/'
+    if (pathToUrlMap[router.path]) {
+      router.url = pathToUrlMap[router.path]
     }
   }
 
