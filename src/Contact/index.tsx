@@ -11,7 +11,7 @@ interface Props {
 export class Contact extends Nullstack<Props> {
   prepare({ project, page }: NullstackClientContext<Props>) {
     page.title = `Contact Information ${pageMeta.titleSuffix}`
-    page.description = pageMeta.description
+    page.description = `Bruno Leonardo Michels (BrunoLM) contact information. Email, Twitter, LinkedIn, and more.`
   }
 
   render({ project }: NullstackClientContext<Props>) {
