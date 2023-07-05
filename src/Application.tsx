@@ -33,6 +33,7 @@ class Application extends Nullstack {
       '/medium': 'https://medium.com/@BrunoLM7',
       '/linktree': 'https://linktr.ee/brunolm',
       '/mal': 'https://myanimelist.net/animelist/brunolm',
+      '/poe': 'https://www.pathofexile.com/account/view-profile/kamiknx/characters',
       '/skills': '/',
     }
 
