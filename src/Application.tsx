@@ -20,6 +20,7 @@ class Application extends Nullstack {
 
   hydrate({ router }: NullstackClientContext) {
     const pathToUrlMap = {
+      '/github': 'https://github.com/brunolm',
       '/linkedin': 'https://www.linkedin.com/in/brunolm/',
       '/blog': 'https://blog.codingwise.com',
       '/twitter': 'https://twitter.com/BrunoLM7',
@@ -28,6 +29,10 @@ class Application extends Nullstack {
       '/youtube': 'https://www.youtube.com/c/BrunoLeonardoMichels',
       '/instagram': 'https://www.instagram.com/brunolm7',
       '/facebook': 'https://www.facebook.com/brunolm7',
+      '/twitch': 'http://twitch.tv/brunolm',
+      '/medium': 'https://medium.com/@BrunoLM7',
+      '/linktree': 'https://linktr.ee/brunolm',
+      '/mal': 'https://myanimelist.net/animelist/brunolm',
       '/skills': '/',
     }
 
